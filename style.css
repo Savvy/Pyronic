@@ -38,7 +38,6 @@ header {
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-position-y: -140px;
 	background-repeat: no-repeat;
 	display: flex;
     align-items: center;
@@ -202,6 +201,7 @@ footer .container .links a:last-of-type {
 
 @media screen and (max-width: 540px) {
 	.video > .video-content > img {
+		align-self: center;
 		width: 200px;
 		height: auto;
 	}
