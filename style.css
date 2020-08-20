@@ -220,10 +220,13 @@ footer .container .links a:last-of-type {
     height: auto;
 }
 
+.b-shadow {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 .player {
     display: flex;
 	flex-direction: column;
-  	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .player > img {
@@ -260,6 +263,38 @@ footer .container .links a:last-of-type {
 
 .social-icons > a:last-of-type {
     margin-right: 0;
+}
+
+.staff, .partner {
+	background: #eee;
+	padding: 25px 20px;
+	transition: transform 0.25s ease-in-out;
+}
+
+.staff:hover, .partner:hover {
+	transform: scale(1.05);
+}
+
+.staff-header > img {
+	float: left;
+	width: 75px;
+	height: auto;
+}
+
+.partner {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.partner > img {
+	width: 220px;
+	height: auto;
+}
+
+.partner > .partner-info > p {
+	font-size: 0.85rem;
 }
 
 @media screen and (max-width: 540px) {
