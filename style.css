@@ -24,12 +24,22 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mono-font {
+.navbar-light .navbar-nav .nav-link, 
+.mono-font,
+footer, .footer {
 	font-family:"Suisse Int'l Mono" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	transition: color .15s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #D64541;
 }
 
 header {
@@ -56,12 +66,17 @@ header {
 	background-color: #212121 !important;
 }
 
+.bg-light {
+	background-color: #fff !important;
+}
+
+
+
 .dark-btn {
 	background-color: #212121;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-weight: 700;
 	letter-spacing: 0.10em;
 	transition: background-color .15s ease-in-out;
 	border-radius: 0;
@@ -70,7 +85,7 @@ header {
 .dark-btn:hover {
 	color: #fff;
 	text-decoration: none;
-	background-color: #292929;
+	background-color: #D64541;
 }
 
 .dark-lg {
@@ -142,8 +157,8 @@ header {
 
 
 .footer, footer {
-	background: #212121;
-	color: #fff;
+	background: #fff;
+	color: #212121;
 }
 
 .footer .container {
@@ -164,7 +179,7 @@ header {
 }
 
 .footer .icons > a {
-	color: #fff;
+	color: #212121;
 	text-decoration: none;
 	margin-right: 20px;
 	font-size: 1.5rem;
@@ -191,7 +206,7 @@ footer .container {
 }
 
 footer .container .links a {
-	color: #fff;
+	color: #212121;
 	margin-right: 10px;
 }
 
